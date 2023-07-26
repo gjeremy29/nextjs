@@ -1,0 +1,20 @@
+import { StarIcon } from "@heroicons/react/24/solid";
+import { StarIcon as EmpyStarIcon } from "@heroicons/react/24/outline";
+
+export default function Raiting() {
+    return (
+        <div className="flex items-center -ml-l">
+            {Array.from({ length: 4 }).map((_, index) => (
+                <StarIcon key={index} className="w-6 h-6 flex-shrink-0
+                text-yellow-400" 
+                />
+            ))}
+            {Array.from({ length: 1 }).map((_, index) => (
+                <EmpyStarIcon key={index} className="w-6 h-6 flex-shrink-0
+                text-yellow-400" 
+                />
+            ))}
+
+        </div>
+    )
+}
